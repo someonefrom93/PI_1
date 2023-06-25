@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+import etl_work
 
 app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Te amo mucho Angelica :3 **japy japy jaaapy, japyjapyjapyjapy:3 "}
+    return etl_work.hello_word_print_from_etl()
