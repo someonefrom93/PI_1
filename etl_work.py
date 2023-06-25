@@ -1,2 +1,2 @@
 def hello_word_print_from_etl():
-    print("Hello boy")
+    return {"message":"Hello boy"}
