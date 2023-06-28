@@ -1,4 +1,3 @@
-
 import os
 
 from urllib.parse import quote_plus
@@ -22,17 +21,23 @@ try:
 except Exception as e:
     print(e)
 
-
 db = client_atlas.pi_henry
 
+movies = db.movies
 
-
-
+##############################################################################
 
 from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/")
-def root():
-    return db.movies.find_one({})
+def execute_query():
+    result = movies.find_one({})
+    data = [movie for movie in result]
+    return {"data": data}
+
+
+
+
+
