@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return etl_work.hello_word_print_from_etl()
+    return etl_work.first_endpoint()
