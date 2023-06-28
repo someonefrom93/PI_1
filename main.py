@@ -4,5 +4,5 @@ import etl_work
 app = FastAPI()
 
 @app.get("/")
-async def root():
+def root():
     return etl_work.first_endpoint()

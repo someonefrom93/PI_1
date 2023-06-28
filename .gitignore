@@ -4,3 +4,7 @@ venv/
 /Data
 Data
 Data/
+
+/.env
+.env
+.env/
