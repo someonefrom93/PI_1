@@ -28,4 +28,7 @@ db = client_atlas.pi_henry
 def first_endpoint():
     return db.movies.find_one({})
 
+print(first_endpoint())
+
+
 
