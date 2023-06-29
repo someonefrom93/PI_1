@@ -11,5 +11,5 @@ def get_movie():
 
 
 @movies.get("/movies_per_day/{day}")
-def retrieve_movies_per_day():
+async def retrieve_movies_per_day():
     return "Hello"
