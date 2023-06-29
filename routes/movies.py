@@ -5,7 +5,7 @@ from schemas.movie import movieEntity, moviesEntity
 movies = APIRouter()
 
 @movies.get("/movies")
-def get_movie():
+async def get_movie():
     return movieEntity(client_atlas.pi_henry.movies.find_one({}))
 
 
