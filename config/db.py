@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-user = os.environ.get("USER")
-password = os.environ.get("PASSWORD")
+USER = os.environ.get("USER")
+PASSWORD = os.environ.get("PASSWORD")
 
-uri = "mongodb+srv://" + user  + ":" + password + "@cluster0.muda7ep.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://" + USER  + ":" + PASSWORD + "@cluster0.muda7ep.mongodb.net/?retryWrites=true&w=majority"
 # Create a new client and connect to the server
 client_atlas = MongoClient(uri, server_api=ServerApi('1'))
 # Send a ping to confirm a successful connection
